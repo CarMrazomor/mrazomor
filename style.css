@@ -1,0 +1,404 @@
+:root {
+    --red: #e54639;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Raleway, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.naslov {
+    text-align: center;
+    margin-top: 100px;
+    color: #343434
+}
+
+
+/***********NAV***********/
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    height: 70px;
+}
+
+.logo {
+    float: left;
+    color: white;
+    font-size: 30px;
+    line-height: 70px;
+    text-decoration: none;
+    padding-left: 15%;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+ul {
+    float: right;
+    padding-right: 15%;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    line-height: 70px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+.current {
+    color: var(--red);
+}
+
+
+
+.toggle {
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+    display: none;
+    line-height: 70px;
+    padding-right: 15%;
+}
+
+/***********HEADER***********/
+
+header {
+    background: rgb(5, 64, 242);
+    background: linear-gradient(180deg, rgba(5, 64, 242, 1) 24%, rgba(255, 255, 255, 1) 180%);
+}
+
+.header-showcase {
+    width: 100%;
+    margin-top: 12%;
+}
+
+.header-showcase .text {
+    float: left;
+    width: 40%;
+    margin-bottom: 12%;
+}
+
+.header-showcase .text h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.header-showcase .text p {
+    color: white;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 3rem;
+}
+
+.header-showcase .text a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #2c2c2c;
+    transition: 0.2s;
+}
+
+.header-showcase .text a:hover {
+    background-color: var(--red);
+}
+
+.header-showcase img {
+    max-width: 30rem;
+    float: right;
+
+}
+
+/***********BOXES***********/
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6rem;
+    padding: 5rem;
+    width: 100%;
+}
+
+.boxes .box {
+    background-color: #c7c7c7;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.boxes i {
+    color: var(--red);
+    font-size: 40px;
+    padding: 1rem;
+}
+
+.box h3 {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 0px;
+    font-weight: 500
+}
+
+.box p {
+    text-align: left;
+    line-height: 26px;
+}
+
+/***********HOSTING***********/
+
+.hosting {
+    margin-top: 200px;
+}
+
+.hosting-img {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    float: left;
+
+}
+
+.hosting-text {
+    float: right;
+    width: 60%;
+    color: #313131;
+    padding: 1rem;
+}
+
+.hosting-text h1 {
+    padding-bottom: 1rem;
+    font-size: 32px;
+}
+
+.hosting-text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.hosting-text a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #2c2c2c;
+    transition: 0.2s;
+}
+
+.hosting-text a:hover {
+    background-color: var(--red);
+}
+
+/***********CONTACT***********/
+.contact {
+    background-color: #094c86;
+    margin-top: 300px;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.contact .box {
+    margin: 100px;
+}
+
+.get-in-touch {
+    color: white;
+}
+
+.get-in-touch h3 {
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.get-in-touch p {
+    width: 70%;
+    padding-bottom: 2rem;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact i {
+    color: var(--red);
+    font-size: 30px;
+    float: left;
+}
+
+.contact ol p {
+    padding-left: 3rem;
+}
+
+.say-something {
+    background-color: #ffffff;
+    color: #292929;
+    padding: 1rem;
+}
+
+.say-something h3 {
+    font-size: 25px;
+}
+
+form {}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--red);
+    margin: 10px 0px;
+}
+
+textarea {
+    height: 120px;
+    width: 100%;
+    border: 1px solid var(--red);
+    margin: 5px 0px;
+}
+
+button {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0px;
+    background-color: var(--red);
+    transition: 0.2s;
+    border: none;
+}
+
+/***********FOOTER***********/
+
+footer {
+    background-color: #0c0c0c;
+    color: white;
+    height: 100px;
+}
+
+footer .copy {
+    float: left;
+    line-height: 100px;
+}
+
+.icons {
+    float: right;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.icons i {
+    padding: 0px 5px;
+}
+
+/**********MEDIA QUERY*********/
+
+@media (max-width: 768px) {
+
+
+    /*******NAV****/
+    .toggle {
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        display: none;
+        background-color: transparent;
+        padding-right: 0;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        transition: 0.1s;
+    }
+
+    nav ul li a:hover,
+    .current {
+        background-color: var(--red);
+        display: block;
+        color: white;
+    }
+
+    /***HEADER******/
+
+    .header-showcase .text {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .header-showcase img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .header-showcase .text a {
+        padding: 10px 30px;
+        background-color: #2c2c2c;
+        transition: 0.2s;
+    }
+
+    .header-showcase .text a:hover {
+        background-color: var(--red);
+    }
+
+    /******BOXES*******/
+    .boxes {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        grid-gap: 4rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    /******HOSTING*****/
+
+    .hosting {
+        margin-top: 150px;
+    }
+
+    .hosting-img {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .hosting-text {
+        float: none;
+        width: 100%;
+    }
+
+}
