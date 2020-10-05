@@ -24,7 +24,6 @@ body {
     color: #343434
 }
 
-
 /***********NAV***********/
 
 nav {
@@ -70,8 +69,6 @@ nav ul li a:hover,
 .current {
     color: var(--red);
 }
-
-
 
 .toggle {
     width: 100%;
@@ -143,8 +140,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 6rem;
-    padding: 5rem;
     width: 100%;
+    margin-top: 50px;
 }
 
 .boxes .box {
@@ -217,6 +214,7 @@ header {
 }
 
 /***********CONTACT***********/
+
 .contact {
     background-color: #094c86;
     margin-top: 300px;
@@ -329,8 +327,8 @@ footer a {
 
 @media (max-width: 768px) {
 
-
     /*******NAV****/
+
     .toggle {
         display: block;
     }
@@ -390,6 +388,7 @@ footer a {
     }
 
     /******BOXES*******/
+
     .boxes {
         margin-top: 50px;
         grid-template-columns: 1fr;
@@ -416,6 +415,7 @@ footer a {
     }
 
     /*****CONTACT*******/
+
     .contact {
         margin-top: 100px;
     }
@@ -430,6 +430,7 @@ footer a {
     }
 
     /**********FOOTER*****/
+
     footer {
         height: 200px;
     }
@@ -453,6 +454,7 @@ footer a {
 @media (max-width: 1024px) and (min-width: 768px) {
 
     /*****NAV****/
+
     .logo {
         font-size: 26px;
     }
@@ -492,6 +494,7 @@ footer a {
     }
 
     /**BOXES*****/
+
     .boxes {
         grid-template-columns: 1fr;
         grid-gap: 2rem;
@@ -500,6 +503,7 @@ footer a {
     }
 
     /***HOSTING****/
+
     .hosting {
         margin-top: 150px;
     }
@@ -516,6 +520,7 @@ footer a {
     }
 
     /*******CONTACT*******/
+
     .contact {
         margin-top: 100px;
     }
