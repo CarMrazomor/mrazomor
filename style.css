@@ -105,7 +105,6 @@ header {
     width: 60%;
     margin: auto;
     overflow: hidden;
-
     text-align: center;
 }
 
@@ -467,6 +466,94 @@ footer p {
     footer p {
         width: 100%;
 
+    }
+
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    /*****NAV******/
+
+     .ikone {
+        display: block;
+    }
+
+    nav .icons {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        padding-right: 10%;
+        z-index: 100;
+    }
+
+    nav ul {
+        width: 50%;
+        display: none;
+        float: right;
+        background-color: transparent;
+        margin-top: 0;
+        padding: 0;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e2dede;
+    }
+
+    .active {
+        display: block;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 16px;
+        text-align: left;
+        transition: 0.1s;
+        font-size: 16px;
+        font-weight: 600;
+        color: gray;
+    }
+
+
+
+
+    /******OTHER*****/
+
+    header {
+        width: 80%;
+    }
+
+    .two-box {
+        grid-template-columns: 1fr;
+    }
+
+    .two-box .box {
+        padding-bottom: 0px;
+        padding: 0;
+    }
+
+    .links-box .box a {
+        text-align: justify;
+    }
+
+    .links-box .box .btn {}
+
+    .footer-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p {
+        width: 100%;
     }
 
 }
