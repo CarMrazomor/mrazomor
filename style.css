@@ -114,7 +114,7 @@ header h1 {
     color: #313131;
     font-weight: 300;
     font-size: 42px;
-    margin-top: 5rem;
+    margin-top: 9rem;
     margin-bottom: 4rem;
     line-height: 52px;
 }
@@ -341,8 +341,19 @@ footer p {
         font-size: 32px;
         line-height: 46px;
     }
-
-
+    
+    header .download {
+    padding: 20px 28px;
+    background-color: #2098f5;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 3%;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+    
+    
     /******BOXES*******/
 
     .two-box {
@@ -358,6 +369,10 @@ footer p {
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         margin-top: 1rem;
+    }
+    
+    .three-box .box{
+        padding: 0;
     }
 
     /***LINKS******/
